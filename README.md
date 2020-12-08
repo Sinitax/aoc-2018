@@ -1,3 +1,3 @@
-# AdventOfCode-2018
+# Advent Of Code 2018
 
-All 25 problems of the AdventOfCode 2018 written in Python3.
+All 25 solutions written in Python3
