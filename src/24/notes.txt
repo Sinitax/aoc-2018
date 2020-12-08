@@ -1,0 +1,26 @@
+infection and immune sys are armies
+    - made of groups of identical units
+    - group:
+        - same hitpoint
+        - same attack damage
+        - same initiative (who attacks first has highest)
+        - same weaknesses / immunities
+        - effective power = n of members * attack damage
+
+target selection:
+    - highest effective power chooses first sorted
+    if tie => higher initiative chooses first
+    - choose group it would damage most
+    if tie => largest effective power
+    if tie => largest intiative
+    if no group => no attack
+
+attack:
+    - attack in descending order of initiative
+    - regardless of army
+    - immune: 0 dmg
+    - weak: 2 x dmg
+    - only full death, units dont have dynamic health
+
+
+(army, # of units, # of hp, initiative, dict of weaknesses / immunity, damage, type)
